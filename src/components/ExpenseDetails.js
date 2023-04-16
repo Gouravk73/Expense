@@ -1,6 +1,6 @@
 import React from 'react'
 import './ExpenseItem.css'
-function ExpenseDetails (props) {
+const ExpenseDetails =(props)=> {
   return (
     <div>  
     <div className="expense-item__description">
