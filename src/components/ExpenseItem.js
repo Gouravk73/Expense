@@ -8,6 +8,9 @@ const ExpenseItem = (props ) => {
     
     console.log('Clicked');
   };
+  const clickDeleteHandler=() => {
+    console.log('deleted');
+  };
   console.log(props.date);
   return (
     <div className="expense-item">
@@ -16,6 +19,7 @@ const ExpenseItem = (props ) => {
       <ExpenseDetails  title={props.title} 
       amount={props.amount} />
       <button onClick={clickHandler}>Change Title</button>
+      <button onClick={clickDeleteHandler}>Delete Title</button>
 
     </div>
   );
