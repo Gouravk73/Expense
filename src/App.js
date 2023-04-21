@@ -1,4 +1,6 @@
 import ExpenseItem from "./components/ExpenseItem";
+import ExpenseForm from "./components/ExpenseForm";
+
 function App() {
   const expenses = [
     {
@@ -20,9 +22,13 @@ function App() {
     />
   ));
   return (
+    <>
     <div>
+      
    {expenseList}
 </div>
+<ExpenseForm/>
+</>
     
   );
 }
